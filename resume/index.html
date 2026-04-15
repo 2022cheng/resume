@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小林 - Java高级后端工程师</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="avatar-box">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar">林</div>
+                </div>
+                <h1 class="sidebar-name">小林</h1>
+                <p class="sidebar-title">Java高级后端工程师</p>
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    AVAILABLE
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="section-label"><i class="fas fa-user"></i> PROFILE</h3>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>138****8888</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>zhangsan@example.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>5年工作经验</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>某某大学 · 本科 · 2020届</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="section-label"><i class="fas fa-code"></i> SKILLS</h3>
+                <div class="skill-tags" id="sidebarSkills"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="section-label"><i class="fas fa-language"></i> LANGUAGES</h3>
+                <div class="language-item">
+                    <span>中文</span>
+                    <div class="language-bar"><div class="language-progress" style="width: 100%"></div></div>
+                </div>
+                <div class="language-item">
+                    <span>English</span>
+                    <div class="language-bar"><div class="language-progress" style="width: 70%"></div></div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="section-label"><i class="fas fa-heart"></i> INTERESTS</h3>
+                <div class="interests-grid">
+                    <div class="interest-item"><i class="fas fa-laptop-code"></i><span>开源贡献</span></div>
+                    <div class="interest-item"><i class="fas fa-book"></i><span>技术分享</span></div>
+                    <div class="interest-item"><i class="fas fa-dumbbell"></i><span>健身</span></div>
+                    <div class="interest-item"><i class="fas fa-gamepad"></i><span>棋类</span></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 右侧主内容区 -->
+        <main class="main-content">
+            <!-- 顶部导航 -->
+            <nav class="top-nav">
+                <button class="nav-tab active" data-tab="resume">
+                    <i class="fas fa-file-alt"></i> 个人简历
+                </button>
+                <button class="nav-tab" data-tab="projects">
+                    <i class="fas fa-rocket"></i> 项目作品
+                </button>
+                <button class="nav-tab" data-tab="certificates">
+                    <i class="fas fa-certificate"></i> 证书资质
+                </button>
+            </nav>
+
+            <!-- 简历内容 -->
+            <div class="tab-content active" id="resume">
+                <section class="content-section">
+                    <h2 class="content-title">
+                        <span class="title-num">01</span>
+                        <span class="title-text">工作经历</span>
+                        <span class="title-line"></span>
+                    </h2>
+                    <div id="workExperience"></div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="content-title">
+                        <span class="title-num">02</span>
+                        <span class="title-text">专业技能</span>
+                        <span class="title-line"></span>
+                    </h2>
+                    <div id="skillsDetail"></div>
+                </section>
+            </div>
+
+            <!-- 项目作品 -->
+            <div class="tab-content" id="projects">
+                <section class="content-section">
+                    <h2 class="content-title">
+                        <span class="title-num">01</span>
+                        <span class="title-text">项目经历</span>
+                        <span class="title-line"></span>
+                    </h2>
+                    <div id="projectDetail"></div>
+                </section>
+            </div>
+
+            <!-- 证书资质 -->
+            <div class="tab-content" id="certificates">
+                <section class="content-section">
+                    <h2 class="content-title">
+                        <span class="title-num">01</span>
+                        <span class="title-text">证书与荣誉</span>
+                        <span class="title-line"></span>
+                    </h2>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <i class="fas fa-award"></i>
+                            <h4>待补充</h4>
+                            <p>如有相关证书请补充</p>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-trophy"></i>
+                            <h4>待补充</h4>
+                            <p>如有荣誉请补充</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 页脚 -->
+            <footer class="main-footer">
+                <p>© 2026 小林 · Java高级后端工程师 · Built with Passion</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
